@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="is.com.cryptobayt.AddFiles">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sixty_dp"
+        android:background="#03a9f4"
+        android:elevation="2dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/thirty_five_dp"
+            android:layout_height="@dimen/thirty_five_dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/sixteen_dp"
+            android:layout_marginRight="@dimen/sixteen_dp"
+            android:src="@drawable/icon" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="CryptoByte"
+            android:textColor="#fff"
+            android:textSize="@dimen/twenty_dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/beginShow"
+            android:layout_width="@dimen/thirty_five_dp"
+            android:layout_height="@dimen/thirty_five_dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/sixteen_dp"
+            android:layout_marginRight="@dimen/sixteen_dp"
+            android:src="@drawable/check"
+            android:tint="#fff"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sixteen_dp"
+        android:text="Secret folder name"
+        android:layout_marginRight="@dimen/sixteen_dp"
+        android:layout_marginLeft="@dimen/sixteen_dp"
+        android:textStyle="bold"
+        android:textSize="@dimen/sixteen_dp"
+        android:textColor="#03a9f4"/>
+    <EditText
+        android:id="@+id/roomName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_color_pr_strike"
+        android:layout_marginLeft="@dimen/sixteen_dp"
+        android:layout_marginRight="@dimen/sixteen_dp"
+        android:layout_marginTop="@dimen/five_dp"
+        android:hint="Name of folder"
+        android:textSize="@dimen/sixteen_dp"
+        android:textColor="#464646"
+        android:textColorHint="#d4d4d4"
+        android:paddingRight="@dimen/ten_dp"
+        android:paddingLeft="@dimen/ten_dp"
+        android:paddingTop="@dimen/seven_dp"
+        android:paddingBottom="@dimen/seven_dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/thirty_dp"
+        android:layout_marginTop="@dimen/twenty_dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Add email for access"
+            android:layout_marginRight="@dimen/sixteen_dp"
+            android:layout_marginLeft="@dimen/sixteen_dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textSize="@dimen/sixteen_dp"
+            android:textColor="#03a9f4"/>
+        <ImageView
+            android:id="@+id/ivAddEmail"
+            android:layout_width="@dimen/thirty_dp"
+            android:layout_height="@dimen/thirty_dp"
+            android:layout_marginRight="@dimen/sixteen_dp"
+            android:layout_marginLeft="@dimen/ten_dp"
+            android:src="@drawable/plus"
+            android:padding="@dimen/two_dp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvEmails"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/eighty_dp"
+        android:layout_marginLeft="@dimen/sixteen_dp"
+        android:layout_marginRight="@dimen/sixteen_dp"
+        android:layout_marginTop="@dimen/five_dp"
+        android:background="@drawable/edit_text_color_pr_strike_solid_grey"
+        android:paddingBottom="@dimen/seven_dp"
+        android:paddingLeft="@dimen/ten_dp"
+        android:paddingRight="@dimen/ten_dp"
+        android:paddingTop="@dimen/seven_dp"
+        android:text="islomov49@gmail.com, "
+        android:textColor="#464646" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/thirty_dp"
+        android:layout_marginTop="@dimen/twenty_dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Add email for access"
+            android:layout_marginRight="@dimen/sixteen_dp"
+            android:layout_marginLeft="@dimen/sixteen_dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textSize="@dimen/sixteen_dp"
+            android:textColor="#03a9f4"/>
+        <ImageView
+            android:id="@+id/ivAddFile"
+            android:layout_width="@dimen/thirty_dp"
+            android:layout_height="@dimen/thirty_dp"
+            android:layout_marginRight="@dimen/sixteen_dp"
+            android:layout_marginLeft="@dimen/ten_dp"
+            android:src="@drawable/plus"
+            android:padding="@dimen/two_dp"
+            />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvFileList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/sixteen_dp"
+        android:layout_marginRight="@dimen/sixteen_dp"
+        android:layout_marginTop="@dimen/five_dp"
+        android:layout_weight="1"
+        android:background="@drawable/edit_text_color_pr_strike_solid_grey"
+        android:paddingBottom="@dimen/seven_dp"
+        android:paddingLeft="@dimen/ten_dp"
+        android:paddingRight="@dimen/ten_dp"
+        android:paddingTop="@dimen/twelve_dp"
+        android:clipToPadding="false"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#9a9a9a"
+        android:textSize="@dimen/twelve_dp"
+        android:layout_marginRight="@dimen/sixteen_dp"
+        android:layout_marginLeft="@dimen/sixteen_dp"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/ten_dp"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:text="Very strong protection with AES, SHA-1 and MD5.\n Developed by Islomov Sardor. TUIT"/>
+</LinearLayout>
